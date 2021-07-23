@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyForm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+<style>
+ 
+        input [type="text"],select,textarea
+        {
+            width: 100%;
+            padding: 12px;
+            border: 1px snow #cccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10;
+            resize: vertical;
+        }
+        input[type="submit"] 
+        {
+            background-color: teal;
+            color:white;
+            padding: 12px 20px;
+            border:none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover
+        {
+            background-color: cadetblue;
+        }
+        .container
+        {
+            border-radius: 5px;
+            background-color:beige;
+            padding: 20px;
+        }
+        h4
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            font-size: 25px;
+            color: wheat;
+        }
+        footer
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            font-size: 25px;
+            color: wheat;
+        }
+</style>
+</head>
+<body>
+    <header style="background-color: slategray" ><h4>contact form</h4><br></header>
+    
+
+    <div class="container">
+    <form action="/action_page.php">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+        <br>
+        <label for="lname">Last Name</label><br>
+        <input for="text" id="lname" name="lastname" placeholder="SurName..."><br>
+        <br>
+        <label for="phone">Phone Number</label><br>
+        <input type="text" id="phone" name="phonenumber" placeholder="Your Number..."><br>
+        <br>
+        <label for="ID">ID Number</label><br>
+        <input type="text" id="id" name="id" placeholder="Your ID..."><br>
+        <br>
+        <label for="gender">Gender</label><br>
+        <select>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <label for="summary">Summary</label><br>
+        <textarea id="summary" name="summary" placeholder="Talk About Your-Self..." style="height: 200px"></textarea>
+        <input type="submit" value="submit">
+        <footer style="background-color: slategray">
+            <h4>Thank You.</h4><br>
+        </footer>
+        </form>
+    </div>
+</body>
+</html>
